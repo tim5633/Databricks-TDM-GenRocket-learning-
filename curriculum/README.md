@@ -1,0 +1,66 @@
+# Daily Study Plan — direct links
+
+- [2026-10-29 | Day 01: Workspace and SQL warehouses](day-01.md) — TDM: TDM lifecycle and test data requirements
+- [2026-10-30 | Day 02: Lakehouse and medallion architecture](day-02.md) — TDM: Enterprise TDM strategy outline
+- [2026-10-31 | Day 03: PySpark DataFrames](day-03.md) — TDM: Primary and foreign keys
+- [2026-11-01 | Day 04: Delta Lake transactions](day-04.md) — TDM: PII PHI PCI classification
+- [2026-11-02 | Day 05: Databricks SQL and query profiles](day-05.md) — TDM: Deterministic masking and tokenization
+- [2026-11-03 | Day 06: Medallion pipeline hands-on](day-06.md) — TDM: Graph aware data subsetting
+- [2026-11-04 | Day 07: Week one architecture review](day-07.md) — TDM: Gold copy and repeatable seed
+- [2026-11-05 | Day 08: Auto Loader incremental ingestion](day-08.md) — TDM: Masking policy and validation matrix
+- [2026-11-06 | Day 09: Lakeflow Connect ingestion](day-09.md) — TDM: MOSTLY AI SDK quick start
+- [2026-11-07 | Day 10: Declarative Pipelines and expectations](day-10.md) — TDM: MOSTLY AI local synthetic evaluation
+- [2026-11-08 | Day 11: Lakeflow Jobs multi-task scheduling](day-11.md) — TDM: GenRocket Domains and Attributes
+- [2026-11-09 | Day 12: Schema drift and quarantine](day-12.md) — TDM: GenRocket Generators and Receivers
+- [2026-11-10 | Day 13: Incremental ETL pipeline](day-13.md) — TDM: GenRocket Scenarios
+- [2026-11-11 | Day 14: Job recovery drills](day-14.md) — TDM: GenRocket parent-child relationships
+- [2026-11-12 | Day 15: Unity Catalog objects](day-15.md) — TDM: GenRocket normal boundary and negative cases
+- [2026-11-13 | Day 16: Lineage and role access](day-16.md) — TDM: GenRocket repeatable data provisioning
+- [2026-11-14 | Day 17: Masking and sensitive columns](day-17.md) — TDM: Delphix virtualization masking and bookmarks
+- [2026-11-15 | Day 18: Spark performance and execution](day-18.md) — TDM: Informatica TDM masking and subsetting
+- [2026-11-16 | Day 19: Declarative Automation Bundles and Git](day-19.md) — TDM: Broadcom CA TDM reservations
+- [2026-11-17 | Day 20: Governed pipeline capstone](day-20.md) — TDM: GenRocket CI CD trigger design
+- [2026-11-18 | Day 21: Associate skills audit](day-21.md) — TDM: Data quality and SQL anti joins
+- [2026-11-19 | Day 22: Exam: ingestion and platform](day-22.md) — TDM: TDM governance RACI and KPIs
+- [2026-11-20 | Day 23: Associate exam target and timed revision](day-23.md) — TDM: Test data refresh orchestration
+- [2026-11-21 | Day 24: Exam: Lakeflow and transformations](day-24.md) — TDM: Deep versus shallow clone tradeoffs
+- [2026-11-22 | Day 25: Exam: governance and CI/CD](day-25.md) — TDM: MOSTLY AI versus GenRocket decisions
+- [2026-11-23 | Day 26: Professional query planning and skew](day-26.md) — TDM: TDM vendor weighted selection scorecard
+- [2026-11-24 | Day 27: Structured Streaming checkpointing](day-27.md) — TDM: GenRocket automated scenario integration
+- [2026-11-25 | Day 28: CDC and schema evolution](day-28.md) — TDM: Test data SLAs and incident runbook
+- [2026-11-26 | Day 29: Production Lakeflow failure recovery](day-29.md) — TDM: Enterprise TDM strategy review
+- [2026-11-27 | Day 30: Professional optimization benchmark](day-30.md) — TDM: End to end TDM PoC
+- [2026-11-28 | Day 31: Security and audit controls](day-31.md) — TDM: Refresh idempotency testing
+- [2026-11-29 | Day 32: CI/CD deploy and rollback](day-32.md) — TDM: Performance baseline for provisioning
+- [2026-11-30 | Day 33: Production pipeline architecture](day-33.md) — TDM: Audit trail and least privilege
+- [2026-12-01 | Day 34: Streaming and CDC incident lab](day-34.md) — TDM: Schema evolution and change impact
+- [2026-12-02 | Day 35: Professional workload benchmark](day-35.md) — TDM: Synthetic edge case coverage
+- [2026-12-03 | Day 36: Professional mock exam one](day-36.md) — TDM: Gold copy rollback drill
+- [2026-12-04 | Day 37: Professional mock exam two](day-37.md) — TDM: Five vendor architecture tradeoffs
+- [2026-12-05 | Day 38: Professional exam gap review](day-38.md) — TDM: TDM operational handoff
+- [2026-12-06 | Day 39: Professional exam target](day-39.md) — TDM: Manager demonstration and TDM milestone
+- [2026-12-07 | Day 40: GenAI model serving fundamentals](day-40.md) — TDM: Synthetic data for LLM evaluations
+- [2026-12-08 | Day 41: Document parsing and chunking](day-41.md) — TDM: Fictional policy data provenance
+- [2026-12-09 | Day 42: Embeddings and vector search](day-42.md) — TDM: Generate benchmark questions and answers
+- [2026-12-10 | Day 43: Hybrid search and reranking](day-43.md) — TDM: Synthetic retrieval edge cases
+- [2026-12-11 | Day 44: RAG grounding and citations](day-44.md) — TDM: Source freshness metadata
+- [2026-12-12 | Day 45: Governed finance RAG lab](day-45.md) — TDM: RAG data quality checks
+- [2026-12-13 | Day 46: Retrieval evaluation](day-46.md) — TDM: Evaluation dataset versioning
+- [2026-12-14 | Day 47: Agent tool calling](day-47.md) — TDM: Agent tool input schemas
+- [2026-12-15 | Day 48: MCP permission boundaries](day-48.md) — TDM: Controlled data access and MCP
+- [2026-12-16 | Day 49: MLflow traces and experiments](day-49.md) — TDM: No sensitive data in traces
+- [2026-12-17 | Day 50: Evaluation datasets and graders](day-50.md) — TDM: Golden cases and grading
+- [2026-12-18 | Day 51: AI Gateway and monitoring](day-51.md) — TDM: Agent risk model and release gate
+- [2026-12-19 | Day 52: Agent integration lab](day-52.md) — TDM: End to end AI security test
+- [2026-12-20 | Day 53: GenAI deployment](day-53.md) — TDM: Monitoring and incident playbook
+- [2026-12-21 | Day 54: Release gates and rollback](day-54.md) — TDM: Release approvals and audit
+- [2026-12-22 | Day 55: GenAI mock one](day-55.md) — TDM: Synthetic evaluation regression
+- [2026-12-23 | Day 56: GenAI mock two](day-56.md) — TDM: GenAI final flashcards
+- [2026-12-24 | Day 57: GenAI certification target](day-57.md) — TDM: GenAI exam and light TDM review
+- [2026-12-25 | Day 58: Context assembly freshness](day-58.md) — TDM: Context data freshness
+- [2026-12-26 | Day 59: Context retrieval and provenance](day-59.md) — TDM: Context lineage and tenant boundary
+- [2026-12-27 | Day 60: Memory invalidation](day-60.md) — TDM: Memory stale-data regression
+- [2026-12-28 | Day 61: MCP and tenant isolation](day-61.md) — TDM: Agent data access-denied cases
+- [2026-12-29 | Day 62: Context compression and evaluation](day-62.md) — TDM: Context quality versus cost benchmark
+- [2026-12-30 | Day 63: Context certification target](day-63.md) — TDM: Context exam and light review
+- [2026-12-31 | Day 64: Year-end recap and portfolio](day-64.md) — TDM: Final scorecard and demo
