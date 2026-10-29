@@ -1,3 +1,11 @@
+## 從這裡開始：前 14 天中英雙語詳細操作手冊 / Start here: first 14 days bilingual handbook
+
+**[Day 01–14 逐日學習入口 / Step-by-step lessons](curriculum/first-14-days.md)** · **[雙語操作說明 / Bilingual guide](docs/07-bilingual-guide.md)**
+
+每一日包含 **繁體中文＋English、官方文件連結與頁面章節、Databricks 操作位置、分鐘時間表、可複製 SQL/Python Lab、預期輸出、負向測試及完成條件**。需要公司登入的課內 Section 會標示為登入限定，而非虛構深層連結。
+
+Each of the first 14 days includes **Traditional Chinese and English, first-party learning URLs and section locators, UI clicks, timed learning blocks, copyable SQL/Python exercises, expected outputs, negative tests, and acceptance criteria**. Company-only sections are clearly labelled as gated rather than presented as verified deep links.
+
 # Databricks × Test Data Management × GenRocket — 2026 Intensive Bootcamp
 
 > **64-day bilingual-guided hands-on learning roadmap · 29 Oct–31 Dec 2026 · Four Databricks certification targets + enterprise TDM competency.**
