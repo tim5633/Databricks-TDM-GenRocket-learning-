@@ -1,52 +1,101 @@
-# Day 06 · 2026-11-03 — Medallion pipeline hands-on
+# Day 06 — 2026-11-03 — End-to-end Medallion / 端到端 Medallion Pipeline
 
-> **Target:** Medallion pipeline hands-on + **Graph aware data subsetting**. 
-> **Active study budget:** 7 hours max (breaks extra). Days with an exam: use 2–3h only and rest. Stop if you have passed the acceptance tests.
+> **中文與英文對照 / Bilingual hands-on handbook** · 約 7 小時有效學習（不含休息）/ ~7 active study hours excluding breaks.
+>
+> **今日核心目標 / Today's mission:** **端到端 Medallion Pipeline (End-to-end Medallion)** + **關聯式 Subsetting (Referential subsetting)**.
 
-## Why this matters
-Today's Databricks skill makes the financial data platform more reliable or secure; today's TDM skill supports safe repeatable test environments. Do not equate passing a video with independent execution.
+## 0. 今日先看這裡 / Start here (15 min)
 
-## 1. Databricks study — 90 min (EXACT locations)
-1. **Open this specific pre-existing daily course:** [Old Bootcamp Day 06](https://github.com/tim5633/databricks-data-ai-engineering-bootcamp/blob/main/curriculum/day-06.md). Read its learning objective, **course/topic links**, lab and tests. This is a direct file link—not a general Academy search page.
-2. **Read official feature reference:** [Databricks documentation](https://docs.databricks.com/aws/en/delta/). Use in-page heading/navigation for **Medallion pipeline hands-on** and follow matching examples. The URL may be an official section landing page (not a pretend deep lesson).
-3. **Company course (gated):** [Databricks Partner Academy](https://partner-academy.databricks.com/) → Search **Data Engineering** → find **Medallion pipeline hands-on** in the syllabus. Company login and availability required; verify lesson section name in your account.
-4. **Official exam specifications:** [Current exam catalog](https://www.databricks.com/learn/training/certification); use the relevant exam's up-to-date Exam Guide, not remembered weights.
+**中文：** 今天的學習輸出包括 1 個 Databricks 實驗、1 個 TDM/產品實驗、1 次故障/負向測試，以及簡短設計紀錄。你已經懂 Python/SQL，因此重點是如何用於 Enterprise TDM，不重讀語法入門。
 
-**Notes to produce:** 5 bullets on core concepts, one SQL/Python/Spark snippet, one risk or cost trade-off.
+**English:** Produce one Databricks lab, one TDM/vendor lab, a negative test, and a short architecture decision note. Leverage existing Python/SQL experience rather than restarting fundamentals.
 
-## 2. Databricks lab — 90 min (follow in order)
-1. Reproduce the worked example or main lab in [the exact original lesson](https://github.com/tim5633/databricks-data-ai-engineering-bootcamp/blob/main/curriculum/day-06.md) using fictional data.
-2. Change an input (schema/volume/failed permission/invalid row/stream event) and predict expected impact.
-3. Run it and capture actual output in `labs/day-06/db-evidence.md`.
-4. Add a negative test; write the failing case and expected remediation.
-5. Record where it lives in the architecture: generation, staging, Gold Copy, refresh, governance or governed AI.
+## 1. Databricks 官方課程 / Official lesson (75 min)
 
-## 3. TDM + product study — 60 min (EXACT locations)
-1. Topic: **Graph aware data subsetting**.
-2. Official entry: [GenRocket Flight School → authenticated Domains, Generators, Scenarios; do not assume public module URL](https://www.postgresql.org/docs/current/ddl-constraints.html).
-3. Related vendor workflow: [GenRocket Flight School → authenticated Domains, Generators, Scenarios; do not assume public module URL](https://www.genrocket.com/flight-school-welcome/).
-4. On the cited page use its **visible navigation/search** for the named concepts; if access denied, mark BLOCKED and use the public docs or offline Python/SQL equivalent. Paid vendors' exact in-app learning sections are not publicly verified.
-5. Write a 150-word explanation: requirement → feature → security risk → operating owner.
+**直接開啟 / Open:**
+1. [Databricks 官方技術教學 / Official documentation](https://docs.databricks.com/aws/en/lakehouse/medallion)
+2. [原本 Bootcamp Day 06 詳細教材 / Your earlier lesson](https://github.com/tim5633/databricks-data-ai-engineering-bootcamp/blob/main/curriculum/day-06.md)
+3. [Databricks Partner Academy / 公司課程入口](https://partner-academy.databricks.com/) — requires company entitlement.
 
-## 4. TDM hands-on — 90 min
-**Concrete task:** Subset 100 customers and children with zero orphan records.
-1. Work from fictional `customers(customer_id,email)`, `accounts(account_id,customer_id)`, `transactions(transaction_id,account_id,amount)` tables.
-2. Preserve PK/FK relationships; add anti-join assertions for orphan accounts and transactions.
-3. Implement the task in SQL/Python/notebook or accessible vendor UI; if you cannot access GenRocket, label Python generation **fallback, not GenRocket experience**.
-4. Save one usable artifact: `labs/day-06/tdm-lab.sql`, `.py`, or `design.md`; include sample input/output and expected failure test.
+**官網具體位置 / Exact public page section:** `Bronze → Silver → Gold design`.
 
-## 5. Integration — 75 min
-1. Add the day's result to a single end-to-end architecture: requirements → generators → masking/subset → Delta versioned Gold Copy → QA provisioning → tests → governance → AI evaluation.
-2. Run 1 successful validation and 1 deliberately failing condition; record command/output.
-3. Write 3 flashcards for certification and one design trade-off vs an alternative product/approach.
-4. Commit or save the lab and link it in your progress notes.
+**介面點擊路徑 / UI click path:** Notebook → SQL/Python cells.
 
-## 6. Retrieval, reflection and assessment — 15 min
-- [ ] Can explain **Medallion pipeline hands-on** independently in 90 seconds.
-- [ ] Completed **Graph aware data subsetting** task and named the artifact location.
-- [ ] Can rerun successful path and show a captured negative test.
-- [ ] Documented security/privacy impacts, plus one cost/performance or operational constraint.
-- [ ] Updated [daily progress tracker](../docs/04-progress.md).
+**中文步驟：** (a) 打開上方第一個官方連結；(b) 找到 `Bronze → Silver → Gold design` 的對應標題；(c) 看完範例並記錄三個重點；(d) 回到舊 Bootcamp Day 06 核對相同主題；(e) 如有 Partner Academy 權限，搜尋 `End-to-end Medallion` 並依登入後實際課程名稱學習。*沒有公開驗證的內部 Lesson 直達網址不會虛構。*
 
-## If blocked or behind
-Only three essentials: reproduce **one Databricks lab (90m)**; perform **one TDM task (90m)**; write findings and commit (20m). Carry reading forward. **Do not paste company materials, customer data, tokens or exam questions into this public repo.**
+**English steps:** (a) Open the exact official resource; (b) locate the section named above; (c) examine its worked example and note three insights; (d) check your previous Day 06; (e) use the Academy course search if authenticated. *Gated course section names/URLs are not presented as verified.*
+
+**時間 / Timing:** 15m official page → 25m guided examples → 20m old bootcamp lesson → 15m write your notes.
+
+## 2. Databricks 可複製 Lab / Copy-and-run lab (100 min)
+
+**中文預期 / Goal:** 可重現 Medallion 最小 Pipeline.
+
+**執行位置 / Run location:** Databricks SQL Editor 或 Notebook SQL Cell / SQL Editor or notebook SQL cell.
+
+```sql
+WITH bronze AS (SELECT 1 id, '  ACTIVE  ' status UNION ALL SELECT 2,'inactive'), silver AS (SELECT id,upper(trim(status)) status FROM bronze) SELECT status, count(*) n FROM silver GROUP BY status ORDER BY status;
+```
+
+**預期結果 / Expected result:** `ACTIVE=1; INACTIVE=1`.
+
+**逐步操作 / Execution steps:**
+1. 中文：複製到新 Notebook / SQL Editor，先執行一次。English: Paste and run once.
+2. 中文：比對實際輸出與上方 expected result。English: Compare with the expected output.
+3. 中文：改一個輸入（例如 ID、status 或 amount）並預測結果。English: Change one input and predict output first.
+4. 中文：加入一個不合法或異常輸入，確認失敗方式。English: Test one invalid case and record failure mode.
+5. 中文：保存程式和執行證據到 `labs/day-06/`。English: Save code and evidence in the named folder.
+
+**環境限制 / Environment caveat:** 部分功能需要 Unity Catalog 或適當權限，不能建立資料表時請使用自己的 schema 或本機模擬，並記錄差異。 / Some features require entitlements; use a permitted schema or a clearly marked offline simulation.
+
+## 3. TDM / 工具官方學習 / Vendor learning (65 min)
+
+**主題 / Topic:** 關聯式 Subsetting / Referential subsetting.
+
+**官方資源 / First-party resource:** [Referential subsetting](https://www.postgresql.org/docs/current/queries-table-expressions.html).
+
+**要做什麼 / Exact target:** Subset parents and children without orphan keys. **中文：**抽取父子表且不得產生孤兒鍵。
+
+**步驟 / Sequence:**
+1. 中文：打開官方連結；找今天的關鍵詞 `Referential subsetting`。English: Open the source and find today's key concepts.
+2. 中文：寫下此功能解決的測試資料需求，以及對 PK/FK、Privacy 或 Refresh 的影響。English: Document the data requirement and integrity/privacy/refresh impact.
+3. 中文：如果是 GenRocket 需登入才能看到的課程，進入 [Flight School](https://www.genrocket.com/flight-school-welcome/) 並搜尋今天的 Domain/Generator/Scenario 主題。不可假設已獲授權。English: Use the authenticated Flight School navigation if available; do not assume access.
+4. 中文：如果是 MOSTLY AI，優先跟著 [SDK Quick Start](https://mostly-ai.github.io/mostlyai/) 及 [Tutorials](https://mostly-ai.github.io/mostlyai/tutorials/)；大型本機模型訓練可選做。English: Follow SDK Quick Start/Tutorials and treat resource-intensive local training as optional.
+
+**資源身份說明 / Resource status:** 以上是官方公開頁面或已標示需要登入的入口；若未提供單一課內影片的 URL，表示目前無法公開核實，並不是已確認的精準 Section 連結。
+
+## 4. TDM 可執行練習 / Reproducible TDM lab (100 min)
+
+**中文任務 / Task:** 抽取父子表且不得產生孤兒鍵。使用的都是虛構資料，不能提交任何公司或客戶資料。
+
+**English:** Reproduce subset parents and children without orphan keys with fictional inputs only. This is a baseline simulation, **not** proof of using GenRocket commercially.
+
+```python
+customers={1,2,3}; accounts=[(10,1),(11,2),(12,3)]; selected={1,3}
+sub=[r for r in accounts if r[1] in selected]
+assert {p for _,p in sub} <= selected
+print(sub)
+```
+
+**執行步驟 / Run:** (1) 在本機 `python3` 或 Notebook 執行 / run in local Python or notebook; (2) assert 應通過 / assertions must pass; (3) 改一筆輸入讓驗證失敗 / change input to trigger failing check; (4) 記錄修復方式 / record the fix.
+
+**工具實作 / Tool-specific extension:** 如果今天有 GenRocket/MOSTLY AI 實際授權，就同時在該工具建立等價輸出，保留設定與結果截圖。沒有權限時只算完成 Python fallback，不算取得產品實務能力。 / If licensed, reproduce the result in the actual platform and collect evidence; otherwise label the fallback honestly.
+
+## 5. Capstone 整合 / Capstone integration (45 min)
+
+**中文：** 在架構圖標示今天技術在 `需求 → 合成資料 → 遮罩/子集 → Databricks Delta/Gold Copy → QA 環境 → 自動化測試 → 治理` 的位置，寫一段 100 字的設計取捨。
+
+**English:** Mark where today's capability fits in `requirements → synthetic generation → masking/subsetting → Delta/Gold Copy → QA provision → tests → governance`. Write a 100-word decision note with one alternative.
+
+## 6. 回顧與驗收 / Review and acceptance (35 min)
+
+- [ ] **知識 / Knowledge:** 能用中文和英文各解釋 End-to-end Medallion / 端到端 Medallion Pipeline。
+- [ ] **程式 / Execution:** Databricks Lab 得到 `ACTIVE=1; INACTIVE=1` 或有明確環境限制證據。
+- [ ] **TDM / Vendor:** 完成 關聯式 Subsetting 的練習並保存檔案。
+- [ ] **Quality:** 有一次可重現的負向測試與修復方法。
+- [ ] **Privacy:** 沒有真實個人資料、客戶資料、密鑰或內部教材。
+- [ ] **Evidence:** `labs/day-06/README.md` 含指令、輸出、截圖位置、問題及解法。
+
+**完成定義 / Definition of done:** 能在 3 分鐘內展示今日結果；如果只是看完課程但 Lab 沒成功，不能標記完成。 / Demo the results in 3 minutes; watching videos alone does not count.
+
+**遇到權限問題 / Blocked?** 改用公開文件 + 可執行 Python/SQL fallback，記錄 `BLOCKED: login/permission/feature`；正式產品操作保留待補。 / Use the public fallback and log the missing authorization or feature.
