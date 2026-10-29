@@ -1,6 +1,6 @@
 # Day 63 · 2026-12-30 — Context certification target
 
-> **Target:** Context certification target + **Context exam and light review**. **Exam milestone:** Context Engineer planned 29 Dec (booking not confirmed).
+> **Target:** Context certification target + **Context exam and light review**. **Exam milestone:** Context Engineer planned 30 Dec (booking not confirmed).
 > **Active study budget:** 7 hours max (breaks extra). Days with an exam: use 2–3h only and rest. Stop if you have passed the acceptance tests.
 
 ## Why this matters
