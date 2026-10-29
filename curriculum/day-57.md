@@ -1,6 +1,6 @@
 # Day 57 · 2026-12-24 — GenAI certification target
 
-> **Target:** GenAI certification target + **GenAI exam and light TDM review**. **Exam milestone:** GenAI Engineer planned 19 Dec (booking not confirmed).
+> **Target:** GenAI certification target + **GenAI exam and light TDM review**. **Exam milestone:** GenAI Engineer planned 24 Dec (booking not confirmed).
 > **Active study budget:** 7 hours max (breaks extra). Days with an exam: use 2–3h only and rest. Stop if you have passed the acceptance tests.
 
 ## Why this matters
